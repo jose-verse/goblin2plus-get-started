@@ -38,7 +38,7 @@ You should have the following items ready before beginning the process:
 <a name="Step-2-PrepareDevice"></a>
 # Step 2: Prepare your Device
 -  Connect the Goblin 2 Plus using the mini-USB cable.
--  Select the Arduino/Genuino UNO board in tools.
+-  Select the Arduino/Genuino ZERO board in tools.
 
 <a name="Step-3-Build"></a>
 # Step 3: Build and Run the sample
@@ -49,7 +49,29 @@ In this section we are going to run a sample application that send different val
 
 ## Get the SAS Token
 
-1. You can get the SAS (SharedAccessSignature) Token through this methods: [iothub-explorer](https://github.com/Azure/iothub-explorer), [Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/releases) or running the following [code](https://gitlab.com/joserey/sastoken-generator/blob/master/index.js) that is based on this [article of microsoft](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security#security-tokens)
+You can get the SAS (SharedAccessSignature) Token through this methods: [iothub-explorer](https://github.com/Azure/iothub-explorer), [Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/releases) or running the following [code](https://gitlab.com/joserey/sastoken-generator/blob/master/index.js) that is based on this [article of microsoft](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security#security-tokens)
+
+#### Using Device Explorer
+
+1. Get the connection string for your IoT hub. See Set up IoT Hub for more details.
+
+1. On the Configuration tab, paste the IoT Hub connection-string for your IoT hub into IoT Hub connection string and click Update:
+
+    ![hostname](media/dv_sas_1.png)
+
+1. Go to the Management tab, click on list to see your devices, click on SAS Token.
+
+    ![hostname](media/dv_sas_2.png)
+
+1. Select your device, write the days, then click en generate.
+
+    ![hostname](media/dv_sas_3.png)
+
+#### Using javascript code
+
+1. Run the follow code
+
+    [https://gitlab.com/joserey/sastoken-generator/blob/master/index.js](https://gitlab.com/joserey/sastoken-generator/blob/master/index.js)
 
     > **NOTE:**
     > requires Node.js 4.x or later to work properly.
@@ -57,11 +79,10 @@ In this section we are going to run a sample application that send different val
 1. You need to fill the following lines
 
     ```
-    var host = ""; //Hostname, {your-iothub-name}.azure-devices.net
-    var device = ""; //Your device
-    //any symmetric key for the {device id} identity
-    var signingKey = "";
-    var days = 365; //Valid days
+    var host = "";          //Hostname, {your-iothub-name}.azure-devices.net
+    var device = "";        //Your device
+    var signingKey = "";    //any symmetric key for the {device id} identity
+    var days = 365;         //Valid days
     ```
     You can see the hostname here
     ![hostname](media/hostname.png)
