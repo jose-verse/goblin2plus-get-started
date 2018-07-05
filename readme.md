@@ -72,7 +72,7 @@ In this section we are going to run a sample application that send different val
 
 1. Run the file and copy the output (your SAS Token).
 
-    ```
+    ```bash
     SharedAccessSignature sr=XXXXXXXXXXXX.azure-devices.net%2Fdevices%2FXXXXXXXXXXX&sig=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&se=1562285589
     ```
 
@@ -91,16 +91,24 @@ The sample application is hosted on GitHub. Clone the sample repository that con
 1. In these lines you need to put your information
 
     ```
-    String host = "";                                                             //Hostname, {your-iothub-name}.azure-devices.net
-    String deviceid = "";                                                         //Your device
-    String api = "2018-06-30";                                                    //API version
-    String SASToken = "";                                                         //SAS Token
+    String host = "";                                                  //Hostname, {your-iothub-name}.azure-devices.net
+    String deviceid = "";                                              //Your device
+    String api = "2018-06-30";                                         //API version
+    String SASToken = "";                                              //SAS Token
     ```
     You can watch the api-version following this [link](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security)
 
+1. Compile and run in your goblin 2 plus.
 
-1. 
+### Verify the sample application is running successfully
 
+You can use the monitor of iothub-explorer to watch your messages comming to IoT Hub.
+
+```bash
+$ iothub-explorer monitor-events myDevice --login "connection-string"
+```
+
+![Monitor](media/monitor.png)
 
 <a name="NextSteps"></a>
 # Next Steps
