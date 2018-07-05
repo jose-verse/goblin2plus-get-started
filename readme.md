@@ -126,6 +126,8 @@ The sample application is hosted on GitHub. Clone the sample repository that con
 
 1. Compile and run in your goblin 2 plus.
 
+    [Monitor](media/compile_and_run.png)
+
 ## Verify the sample application is running successfully
 
 You can use the monitor of iothub-explorer to watch your messages comming to IoT Hub.
