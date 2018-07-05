@@ -130,7 +130,7 @@ The sample application is hosted on GitHub. Clone the sample repository that con
 
 ## Verify the sample application is running successfully
 
-You can use the monitor of iothub-explorer to watch your messages comming to IoT Hub.
+You can use the monitor of iothub-explorer to watch your messages coming to IoT Hub.
 
 ```bash
 $ iothub-explorer monitor-events myDevice --login "connection-string"
