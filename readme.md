@@ -40,7 +40,7 @@ You should have the following items ready before beginning the process:
 -  Connect the Goblin 2 Plus using the mini-USB cable.
 -  Select the Arduino/Genuino ZERO board in tools.
 
-![Monitor](media/arduino_board.png)
+![Arduino board](media/arduino_board.png)
 
 <a name="Step-3-Build"></a>
 # Step 3: Build and Run the sample
@@ -59,15 +59,15 @@ You can get the SAS (SharedAccessSignature) Token through this methods: [iothub-
 
 1. On the Configuration tab, paste the IoT Hub connection-string for your IoT hub into IoT Hub connection string and click Update:
 
-    ![hostname](media/dvsas_1.png)
+    ![Device explorer sas token 1](media/dvsas_1.png)
 
 1. Go to the Management tab, click on list to see your devices, click on SAS Token.
 
-    ![hostname](media/dvsas_2.png)
+    ![Device explorer sas token 2](media/dvsas_2.png)
 
 1. Select your device, write the days, then click on generate.
 
-    ![hostname](media/dvsas_3.png)
+    ![Device explorer sas token 3](media/dvsas_3.png)
 
 ### Using JavaScript code
 
@@ -87,10 +87,10 @@ You can get the SAS (SharedAccessSignature) Token through this methods: [iothub-
     var days = 365;         //Valid days
     ```
     You can see the hostname here
-    ![hostname](media/hostname.png)
+    ![Hostname](media/hostname.png)
 
     You can see the symmetric key here at the time of create your device
-    ![hostname](media/symmetric_key.png)
+    ![Symmetric key](media/symmetric_key.png)
 
 1. Run the file and copy the output (your SAS Token).
 
@@ -122,11 +122,11 @@ The sample application is hosted on GitHub. Clone the sample repository that con
 
 1. The JSON and request are building here.
 
-    ![Monitor](media/json_request.png)
+    ![JSON request](media/json_request.png)
 
 1. Compile and run in your goblin 2 plus.
 
-    [Monitor](media/compile_and_run.png)
+    ![Compile and run](media/compile_and_run.png)
 
 ## Verify the sample application is running successfully
 
@@ -156,4 +156,3 @@ You have now learned how to run a sample application that collects sensor data a
 [Use Azure Web Apps to visualize real-time sensor data from Azure IoT Hub]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps
 [Weather forecast using the sensor data from your IoT hub in Azure Machine Learning]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-weather-forecast-machine-learning
 [Remote monitoring and notifications with Logic Apps]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-monitoring-notifications-with-azure-logic-apps
-[setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
