@@ -52,18 +52,24 @@ In this section we are going to run a sample application that send different val
 
 1. You can get the SAS (SharedAccessSignature) Token through this methods: [iothub-explorer](https://github.com/Azure/iothub-explorer), [Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/releases) or running the following [code](https://gitlab.com/joserey/sastoken-generator/blob/master/index.js) that is based on this [article of microsoft](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security#security-tokens)
 
-> **NOTE:**
-> requires Node.js 4.x or later to work properly.
+    > **NOTE:**
+    > requires Node.js 4.x or later to work properly.
 
 1. You need to fill the following lines
 
-```
-var host = ""; //Hostname, {your-iothub-name}.azure-devices.net
-var device = ""; //Device
-//any symmetric key for the {device id} identity
-var signingKey = "";
-var days = 365; //Valid days
-```
+    ```
+    var host = ""; //Hostname, {your-iothub-name}.azure-devices.net
+    var device = ""; //Device
+    //any symmetric key for the {device id} identity
+    var signingKey = "";
+    var days = 365; //Valid days
+    ```
+    You can see the hostname here
+    ![hostname](media/hostname.png)
+
+    You can see the symmetric key here at the moment of create your device
+    ![hostname](media/symmetric_key.png)
+
 1. Run the file and copy the output (your SAS Token).
 
 ### Get the sample application from GitHub
@@ -80,15 +86,13 @@ The sample application is hosted on GitHub. Clone the sample repository that con
 
 1. In these lines you need to put your information
 
-```
-String host = "";                                                             //Hostname, {your-iothub-name}.azure-devices.net
-String deviceid = "";                                                         //Your device
-String api = "2018-06-30";                                                    //API version
-String SASToken = "";                                                         //SAS Token
-```
-You can watch the api-version following this [link](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security)
-
-![hostname](media/hostname.png)
+    ```
+    String host = "";                                                             //Hostname, {your-iothub-name}.azure-devices.net
+    String deviceid = "";                                                         //Your device
+    String api = "2018-06-30";                                                    //API version
+    String SASToken = "";                                                         //SAS Token
+    ```
+    You can watch the api-version following this [link](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security)
 
 
 1. 

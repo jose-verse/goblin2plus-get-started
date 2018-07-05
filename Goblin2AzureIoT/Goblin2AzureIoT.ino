@@ -63,7 +63,6 @@ void WEB(){
   //JSON
   String telemetry = "{";
          telemetry +=      "\"iddevice\": \"TEST0001\",";
-         telemetry +=      "\"idsigfox\": \"TESTPAPA\",";
          telemetry +=      "\"temp1\": "+temp1+",";
          telemetry +=      "\"temp2\": "+temp2+",";
          telemetry +=      "\"flow1\": "+flow1+",";
