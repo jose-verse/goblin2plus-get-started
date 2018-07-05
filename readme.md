@@ -6,7 +6,6 @@ language: c
 ---
 
 # Connect Goblin 2 Plus to Azure IoT Hub in the cloud
-===
 ---
 
 # Table of Contents
@@ -100,7 +99,7 @@ The sample application is hosted on GitHub. Clone the sample repository that con
 
 1. Compile and run in your goblin 2 plus.
 
-### Verify the sample application is running successfully
+## Verify the sample application is running successfully
 
 You can use the monitor of iothub-explorer to watch your messages comming to IoT Hub.
 
