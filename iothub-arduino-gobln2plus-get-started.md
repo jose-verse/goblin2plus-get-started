@@ -59,7 +59,7 @@ In this section we are going to run a sample application that send different val
 
     ```
     var host = ""; //Hostname, {your-iothub-name}.azure-devices.net
-    var device = ""; //Device
+    var device = ""; //Your device
     //any symmetric key for the {device id} identity
     var signingKey = "";
     var days = 365; //Valid days
@@ -71,6 +71,10 @@ In this section we are going to run a sample application that send different val
     ![hostname](media/symmetric_key.png)
 
 1. Run the file and copy the output (your SAS Token).
+
+    ```
+    SharedAccessSignature sr=XXXXXXXXXXXX.azure-devices.net%2Fdevices%2FXXXXXXXXXXX&sig=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&se=1562285589
+    ```
 
 ### Get the sample application from GitHub
 

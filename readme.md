@@ -72,6 +72,10 @@ In this section we are going to run a sample application that send different val
 
 1. Run the file and copy the output (your SAS Token).
 
+    ```
+    SharedAccessSignature sr=XXXXXXXXXXXX.azure-devices.net%2Fdevices%2FXXXXXXXXXXX&sig=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&se=1562285589
+    ```
+
 ### Get the sample application from GitHub
 
 The sample application is hosted on GitHub. Clone the sample repository that contains the sample application from GitHub. To clone the sample repository, follow these steps:
