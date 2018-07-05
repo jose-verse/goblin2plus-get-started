@@ -57,15 +57,15 @@ You can get the SAS (SharedAccessSignature) Token through this methods: [iothub-
 
 1. On the Configuration tab, paste the IoT Hub connection-string for your IoT hub into IoT Hub connection string and click Update:
 
-    ![hostname](media/dv_sas_1.png)
+    ![hostname](media/dvsas_1.png)
 
 1. Go to the Management tab, click on list to see your devices, click on SAS Token.
 
-    ![hostname](media/dv_sas_2.png)
+    ![hostname](media/dvsas_2.png)
 
 1. Select your device, write the days, then click en generate.
 
-    ![hostname](media/dv_sas_3.png)
+    ![hostname](media/dvsas_3.png)
 
 #### Using javascript code
 
