@@ -21,7 +21,7 @@ language: c
 
 **About this document**
 
-The following document describes the process of connecting an Goblin 2 Plus system to Azure IoT Hub. This multi-step process includes:
+The following document describes the process of connecting a Goblin 2 Plus system to Azure IoT Hub. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device and get your SAS Token
 -   Send messages to IoT Hub
@@ -30,7 +30,7 @@ The following document describes the process of connecting an Goblin 2 Plus syst
 # Step 1: Prerequisites
 
 You should have the following items ready before beginning the process:
-- Computer with a Git client installed so that you can access the azure-iot-sdk-c code on GitHub.
+- Computer with a Git client installed.
 - [Arduino IDE](https://www.arduino.cc/en/main/software) version 1.6.8 or later.
 - [Setup your IoT hub](https://catalog.azureiotsolutions.com/docs?title=Azure/azure-iot-device-ecosystem/setup_iothub) 
 - [Provision your device and get its credentials](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md)
@@ -49,7 +49,7 @@ In this section we are going to run a sample application that send different val
 
 ## Get the SAS Token
 
-You can get the SAS (SharedAccessSignature) Token through this methods: [iothub-explorer](https://github.com/Azure/iothub-explorer), [Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/releases) or running the following [code](https://gitlab.com/joserey/sastoken-generator/blob/master/index.js) that is based on this [article of microsoft](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security#security-tokens)
+You can get the SAS (SharedAccessSignature) Token through this methods: [iothub-explorer](https://github.com/Azure/iothub-explorer), [Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/releases) or running the following [code](https://gitlab.com/joserey/sastoken-generator/blob/master/index.js) that is based on this [article of Microsoft](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security#security-tokens)
 
 ### Using Device Explorer
 
@@ -63,11 +63,11 @@ You can get the SAS (SharedAccessSignature) Token through this methods: [iothub-
 
     ![hostname](media/dvsas_2.png)
 
-1. Select your device, write the days, then click en generate.
+1. Select your device, write the days, then click on generate.
 
     ![hostname](media/dvsas_3.png)
 
-### Using javascript code
+### Using JavaScript code
 
 1. Run the follow code
 
@@ -87,7 +87,7 @@ You can get the SAS (SharedAccessSignature) Token through this methods: [iothub-
     You can see the hostname here
     ![hostname](media/hostname.png)
 
-    You can see the symmetric key here at the moment of create your device
+    You can see the symmetric key here at the time of create your device
     ![hostname](media/symmetric_key.png)
 
 1. Run the file and copy the output (your SAS Token).
