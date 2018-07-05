@@ -40,6 +40,8 @@ You should have the following items ready before beginning the process:
 -  Connect the Goblin 2 Plus using the mini-USB cable.
 -  Select the Arduino/Genuino ZERO board in tools.
 
+![Monitor](media/arduino_board.png)
+
 <a name="Step-3-Build"></a>
 # Step 3: Build and Run the sample
 
@@ -117,6 +119,10 @@ The sample application is hosted on GitHub. Clone the sample repository that con
     String SASToken = "";                                              //SAS Token
     ```
     You can watch the api-version following this [link](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security)
+
+1. The JSON and request are building here.
+
+    ![Monitor](media/json_request.png)
 
 1. Compile and run in your goblin 2 plus.
 
