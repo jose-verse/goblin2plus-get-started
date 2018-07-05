@@ -21,7 +21,7 @@ language: c
 
 **About this document**
 
-The following document describes the process of connecting an Goblin 2 Plus system to Azure IoT Hub.This multi-step process includes:
+The following document describes the process of connecting an Goblin 2 Plus system to Azure IoT Hub. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device and get your SAS Token
 -   Send messages to IoT Hub
@@ -45,13 +45,13 @@ You should have the following items ready before beginning the process:
 
 ## Setup the development environment
 
-In this section we are going to run a sample application that send different values, this values are random.
+In this section we are going to run a sample application that send different values, these values are random.
 
 ## Get the SAS Token
 
 You can get the SAS (SharedAccessSignature) Token through this methods: [iothub-explorer](https://github.com/Azure/iothub-explorer), [Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/releases) or running the following [code](https://gitlab.com/joserey/sastoken-generator/blob/master/index.js) that is based on this [article of microsoft](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security#security-tokens)
 
-#### Using Device Explorer
+### Using Device Explorer
 
 1. Get the connection string for your IoT hub. See Set up IoT Hub for more details.
 
@@ -67,7 +67,7 @@ You can get the SAS (SharedAccessSignature) Token through this methods: [iothub-
 
     ![hostname](media/dvsas_3.png)
 
-#### Using javascript code
+### Using javascript code
 
 1. Run the follow code
 
